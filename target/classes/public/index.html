@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<h1>Hello,</h1>
+
+<p>twoPointAPI is a java application with spring framework hosted in aws using beanstalk connected to RDS running postgreSQL. Code is written in java 18, but during creation of jar file it's converted to java 8 for beanstalk.</p>
+
+<p>Code creates/access a transaction database. A single transaction has transactionID (created automatically by table, but can be specified), userID, product, and amount.</p>
+
+<p>To access api and see this page follow:<br>
+Twopointapi-env-1.eba-vgvyuxmu.eu-west-1.elasticbeanstalk.com</p>
+
+<p>To get all transactions:<br>
+Twopointapi-env-1.eba-vgvyuxmu.eu-west-1.elasticbeanstalk.com/api/v1/transaction/all</p>
+
+<p>To post a single transaction use any crud app using following json format:</p>
+
+<p>Please note transactionID is added by the database.</p>
+
+<p>{<br>
+ &quot;userId&quot; : 777,<br>
+ &quot;product&quot; : &quot;red whale&quot;,<br>
+ &quot;amount&quot; : 19.99<br>
+}</p>
+
+<p>url:<br>
+Twopointapi-env-1.eba-vgvyuxmu.eu-west-1.elasticbeanstalk.com/api/v1/transaction/add</p>
+
+<p></p>
